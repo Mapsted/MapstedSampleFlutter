@@ -1,0 +1,71 @@
+PODS:
+  - Flutter (1.0.0)
+  - mapsted-sdk-alerts (5.3.21):
+    - mapsted-sdk-triggers-core (= 5.3.21)
+  - mapsted-sdk-core (5.3.21):
+    - SSZipArchive
+  - mapsted-sdk-core-map (4.4.6.2)
+  - mapsted-sdk-geofence (5.3.21):
+    - mapsted-sdk-core (= 5.3.21)
+  - mapsted-sdk-loc-marketing (5.3.21):
+    - mapsted-sdk-core (= 5.3.21)
+  - mapsted-sdk-location-share (5.3.21):
+    - mapsted-sdk-core (= 5.3.21)
+  - mapsted-sdk-map (5.3.21):
+    - mapsted-sdk-core (= 5.3.21)
+    - mapsted-sdk-core-map (= 4.4.6.2)
+  - mapsted-sdk-map-ui (5.3.21):
+    - mapsted-sdk-alerts (= 5.3.21)
+    - mapsted-sdk-loc-marketing (= 5.3.21)
+    - mapsted-sdk-location-share (= 5.3.21)
+    - mapsted-sdk-map (= 5.3.21)
+  - mapsted-sdk-triggers-core (5.3.21):
+    - mapsted-sdk-core (= 5.3.21)
+  - mapsted_flutter (0.0.1):
+    - Flutter
+    - mapsted-sdk-geofence (= 5.3.21)
+    - mapsted-sdk-map (= 5.3.21)
+    - mapsted-sdk-map-ui (= 5.3.21)
+  - SSZipArchive (2.4.3)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - mapsted_flutter (from `.symlinks/plugins/mapsted_flutter/ios`)
+
+SPEC REPOS:
+  https://github.com/Mapsted/podspec-simulator.git:
+    - mapsted-sdk-alerts
+    - mapsted-sdk-core
+    - mapsted-sdk-core-map
+    - mapsted-sdk-geofence
+    - mapsted-sdk-loc-marketing
+    - mapsted-sdk-location-share
+    - mapsted-sdk-map
+    - mapsted-sdk-map-ui
+    - mapsted-sdk-triggers-core
+  trunk:
+    - SSZipArchive
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  mapsted_flutter:
+    :path: ".symlinks/plugins/mapsted_flutter/ios"
+
+SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  mapsted-sdk-alerts: b12a499732a682bcca1231d49cec5727c94e635d
+  mapsted-sdk-core: f01494dc98eb1fba40434fa7bb278caaca9d3699
+  mapsted-sdk-core-map: 3b1a6cc029381236023ed8e35268206ee9559b1f
+  mapsted-sdk-geofence: 332a830de5a4494dbeeda5e28fe36eb3798c505c
+  mapsted-sdk-loc-marketing: 134157d09c900daa5ffc12ba43c625772576fd27
+  mapsted-sdk-location-share: a920eab92fe25a4f2b560367414a003860a112bd
+  mapsted-sdk-map: 76a925a8973b5cde0f08a8baaf5036469910fe7d
+  mapsted-sdk-map-ui: 8f7cd00d3416ce737f29e1454ca44e65bc79c8ae
+  mapsted-sdk-triggers-core: 82ad0a5caae3a0a610f2c12aa026837fe16f73cf
+  mapsted_flutter: d232ac431cb6598892ad705495d1d91623175057
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
+
+PODFILE CHECKSUM: cbd5b3e0f6e56f602c05aee3cf983729acb44846
+
+COCOAPODS: 1.15.2
