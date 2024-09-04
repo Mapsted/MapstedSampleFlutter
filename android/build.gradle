@@ -1,11 +1,8 @@
 buildscript {
-    repositories {
-        google()
-        mavenCentral()
-        maven { url "https://jitpack.io" }
-        maven { url "https://mobilesdk.mapsted.com:8443/artifactory/gradle-mapsted" }
-    }
+    apply from: 'repositories.gradle'
+    repositories repos
 }
+
 
 allprojects {
     repositories {

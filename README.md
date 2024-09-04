@@ -63,46 +63,6 @@ android {
 }
 ```
 
-2. Create build-extras.gradle File Create a file named build-extras.gradle in the android/app directory of your project.
-
-```groovy
-android {
-    packagingOptions {
-                        exclude 'META-INF/LICENSE.md'
-                        exclude 'META-INF/NOTICE.md'
-                        exclude 'META-INF/gradle/incremental.annotation.processors'
-                    }
-    dataBinding {
-        enabled = true
-    }
-}
-```
-
-3. Apply the build-extras.gradle in app/build.gradle
-
-Open your android/app/build.gradle file and add the following code to apply the build-extras.gradle file if it exists:
-
-```groovy
-def hasBuildExtras1 = file('build-extras.gradle').exists()
-if (hasBuildExtras1) {
-    apply from: 'build-extras.gradle'
-}
-```
-
-4. Set the buildscript Repositories
-
-Update the buildscript section in android/app/build.gradle to include additional repositories:
-
-```groovy
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-        maven { url "https://jitpack.io" }
-        maven { url "https://mobilesdk.mapsted.com:8443/artifactory/gradle-mapsted" }
-    }
-}
-```
 Make sure to save your changes and sync your project with Gradle to apply these configurations.
 
 

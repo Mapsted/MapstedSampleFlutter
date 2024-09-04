@@ -1,0 +1,11 @@
+android {
+    // Add your custom configurations here
+    packagingOptions {
+                        exclude 'META-INF/LICENSE.md'
+                        exclude 'META-INF/NOTICE.md'
+                        exclude 'META-INF/gradle/incremental.annotation.processors'
+                    }
+    dataBinding {
+        enabled = true
+    }
+}

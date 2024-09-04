@@ -51,17 +51,13 @@ android {
             signingConfig = signingConfigs.debug
         }
     }
-
-    packagingOptions {
-                        exclude 'META-INF/LICENSE.md'
-                        exclude 'META-INF/NOTICE.md'
-                        exclude 'META-INF/gradle/incremental.annotation.processors'
-    }
-    dataBinding {
-        enabled = true
-    }
 }
 
 flutter {
     source = "../.."
+}
+
+def hasBuildExtras1 = file('build-extras.gradle').exists()
+if (hasBuildExtras1) {
+    apply from: 'build-extras.gradle'
 }
