@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:mapsted_flutter/mapsted_flutter.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await SystemChrome.setPreferredOrientations(
-      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
+void main() {
   runApp(const MyApp());
 }
 
@@ -42,7 +38,7 @@ class MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('MapstedSampleFlutter'),
+        title: const Text('Mapsted Plugin Demo'),
       ),
       body: Center(
         child: ElevatedButton(
